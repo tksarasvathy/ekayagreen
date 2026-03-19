@@ -1,0 +1,49 @@
+.sus-hero h1 { font-size: 56px; font-weight: 800; margin-bottom: 16px; }
+.sus-hero p { font-size: 18px; color: var(--text-muted); max-width: 640px; margin: 0 auto; line-height: 1.7; }
+.sus-philosophy__grid { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 60px; align-items: stretch; }
+.sus-philosophy__grid h2 { font-size: 48px; font-weight: 700; margin-bottom: 20px; }
+.sus-philosophy__grid p { font-size: 16px; font-weight: 500; color: var(--text-muted); line-height: 1.7; }
+.sus-pledge { background: rgba(23,130,68,0.05) !important; border: 1px solid rgba(23,130,68,0.2) !important; box-shadow: none !important; }
+.sus-pledge h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+.sus-pledge p { font-size: 16px; font-weight: 500; color: var(--text-muted); line-height: 1.7; }
+.sus-circular { text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.sus-circular h3 { font-size: 22px; font-weight: 700; margin-bottom: 10px; }
+.sus-circular__icon { width: 128px; height: 128px; border-radius: 50%; background: rgba(23,130,68,0.2); display: flex; align-items: center; justify-content: center; color: var(--green-primary); margin: 0 auto 24px; }
+.sus-pillars__grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; }
+.sus-pillar__icon { width: 48px; height: 48px; border-radius: 50%; background: rgba(23,130,68,0.1); display: flex; align-items: center; justify-content: center; color: var(--green-primary); margin-bottom: 16px; }
+.sus-pillar h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+.sus-pillar ul { list-style: disc; display: flex; flex-direction: column; gap: 8px; margin-top: 8px; padding-left: 20px; }
+.sus-pillar li { font-size: 15px; color: rgb(98,132,120); font-weight: 400; }
+.sus-goals__grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
+.sus-goal { text-align: center; padding: 28px 20px; }
+.sus-goal__num { font-size: 36px; font-weight: 800; color: var(--green-primary); margin-bottom: 6px; }
+.sus-goal__label { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.sus-goal__sub { font-size: 13px; color: var(--text-muted); margin-bottom: 16px; }
+.sus-goal__bar { background: #e5e7eb; border-radius: 4px; height: 6px; margin-bottom: 8px; }
+.sus-goal__fill { height: 6px; background: var(--green-primary); border-radius: 4px; }
+.sus-goal__pct { font-size: 12px; color: var(--text-muted); }
+.sus-stats__grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; margin-bottom: 36px; }
+.sus-stat__num { font-size: 48px; font-weight: 800; margin-bottom: 6px; color: rgb(239,68,68) !important; }
+.sus-stat__label { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+.sus-stat p { font-size: 16px; font-weight: 500; color: var(--text-muted); }
+.sus-stats__note { text-align: center; font-size: 16px; font-weight: 500; color: var(--text-muted); max-width: 700px; margin: 0 auto; }
+.sus-certs__badges { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-bottom: 48px; }
+.sus-cert-badge { background: rgb(236,230,223); color: rgb(33,44,40); padding: 8px 20px; border-radius: 24px; font-size: 16px; font-weight: 600; }
+.sus-verification { max-width: 760px; margin: 0 auto; padding: 40px; text-align: center; }
+.sus-verification__icon { width: 56px; height: 56px; border-radius: 50%; background: rgba(23,130,68,0.1); display: flex; align-items: center; justify-content: center; color: var(--green-primary); margin: 0 auto 16px; }
+.sus-verification h3 { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+.sus-verification p { font-size: 16px; font-weight: 500; color: var(--text-muted); line-height: 1.7; }
+.btn-outline-white { display: inline-flex; align-items: center; gap: 8px; background: transparent; color: #fff; padding: 12px 24px; border-radius: 8px; font-size: 16px; font-weight: 600; border: 1.5px solid rgba(255,255,255,0.6); text-decoration: none; transition: background 0.2s; }
+.btn-outline-white:hover { background: rgba(255,255,255,0.1); }
+@media (max-width: 1024px) {
+  .sus-goals__grid { grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 768px) {
+  .sus-hero h1 { font-size: 36px; }
+  .sus-philosophy__grid { grid-template-columns: 1fr; gap: 36px; }
+  .sus-pillars__grid { grid-template-columns: 1fr; }
+  .sus-stats__grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .sus-goals__grid { grid-template-columns: 1fr; }
+}

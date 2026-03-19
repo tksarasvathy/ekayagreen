@@ -1,0 +1,60 @@
+.par-hero h1 { font-size: 56px; font-weight: 800; margin-bottom: 16px; }
+.par-hero p { font-size: 18px; color: var(--text-muted); max-width: 680px; margin: 0 auto; line-height: 1.7; }
+.par-why h2, .par-who h2, .par-how h2, .par-cta__left h2 { font-size: 36px; font-weight: 700; }
+.par-why > .container > .text-center > p,
+.par-who > .container > .text-center > p,
+.par-how > .container > .text-center > p { font-size: 20px; }
+
+/* Why Partner */
+.par-why__grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 32px; }
+.par-why-card { background: #fff; border: 1px solid rgba(23,130,68,0.1); border-radius: 12px; padding: 24px; transition: border-color 0.3s, box-shadow 0.3s; }
+.par-why-card:hover { border-color: rgba(23,130,68,0.3); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+.par-why-card__inner { display: flex; gap: 16px; align-items: flex-start; }
+.par-why-card__icon { width: 48px; height: 48px; border-radius: 50%; background: rgba(23,130,68,0.1); display: flex; align-items: center; justify-content: center; color: var(--green-primary); flex-shrink: 0; }
+.par-why-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+.par-why-card p { font-size: 16px; font-weight: 500; color: var(--text-muted); line-height: 1.6; }
+
+/* Who We Partner With */
+.par-who__grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+.par-who-card { background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid rgba(23,130,68,0.1); }
+.par-who-card__img { height: 200px; overflow: hidden; }
+.par-who-card__img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.par-who-card__content { padding: 24px; text-align: center; }
+.par-who-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+.par-who-card p { font-size: 16px; font-weight: 500; color: var(--text-muted); }
+
+/* How to Join */
+.par-steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; margin-bottom: 48px; text-align: center; }
+.par-step { padding: 32px 24px; }
+.par-step__num { width: 64px; height: 64px; border-radius: 50%; background: var(--green-primary); color: #fff; font-size: 24px; font-weight: 700; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
+.par-step h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+.par-step p { font-size: 16px; font-weight: 500; color: var(--text-muted); line-height: 1.6; }
+.par-quote { background: #fff; border-radius: 16px; padding: 48px 60px; text-align: center; max-width: 800px; margin: 0 auto; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.par-quote p { font-size: 20px; font-style: italic; font-weight: 500; color: #1a2e20; line-height: 1.5; }
+.par-quote span { display: block; font-size: 16px; font-weight: 500; color: var(--text-muted); margin-top: 12px; }
+
+/* CTA */
+.par-cta__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.par-cta__left h2 { font-size: 40px; font-weight: 700; color: #fff; margin-bottom: 16px; }
+.par-cta__left p { font-size: 16px; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 28px; }
+.par-cta__btns { display: flex; gap: 12px; flex-wrap: wrap; }
+.par-cta-btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 8px; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: #fff; font-size: 16px; font-weight: 600; text-decoration: none; transition: background 0.2s; }
+.par-cta-btn:hover { background: rgba(255,255,255,0.25); }
+.par-cta__card { background: rgba(0,0,0,0.15); border-radius: 16px; padding: 40px 32px; text-align: center; color: #fff; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.par-cta__card h3 { font-size: 24px; font-weight: 700; }
+.par-cta__card p { font-size: 16px; color: rgba(255,255,255,0.85); }
+.par-cta-btn--outline { background: rgba(236,230,223,0.9); color: #212c28; border-color: transparent; margin-top: 8px; }
+.par-cta-btn--outline:hover { background: rgb(236,230,223); }
+
+@media (max-width: 1024px) {
+  .par-why__grid { grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 768px) {
+  .par-hero h1 { font-size: 34px; }
+  .par-who__grid { grid-template-columns: 1fr; }
+  .par-steps { grid-template-columns: 1fr; }
+  .par-cta__grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .par-why__grid { grid-template-columns: 1fr; }
+}
